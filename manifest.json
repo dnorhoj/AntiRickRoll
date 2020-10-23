@@ -1,0 +1,19 @@
+{
+    "content_scripts": [
+        {
+            "js": ["background.js"],
+            "matches": ["https://*.youtube.com/*"],
+            "run_at": "document_start"
+        }
+    ],
+    "name": "AntiRick",
+    "version": "1.0",
+    "description": "Never gonna rickroll you, never gonna let you get rickrolled.",
+    "manifest_version": 2,
+    "web_accessible_resources": [
+        "warn/warn.html"
+    ],
+    "permissions": [
+        "storage"
+    ]
+}
