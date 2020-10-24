@@ -7,7 +7,7 @@
         }
     ],
     "name": "AntiRickRoll",
-    "version": "1.1",
+    "version": "1.2",
     "description": "Never gonna rickroll you, never gonna let you get rickrolled.",
     "manifest_version": 2,
     "web_accessible_resources": [
