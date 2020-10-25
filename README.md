@@ -2,7 +2,7 @@
 
 Chrome webstore link: [Currently awaiting manual verification]
 
-Firefox addons link: [Currently awaiting manual verification]
+Firefox addons link: https://addons.mozilla.org/en-US/firefox/addon/antirickroll/
 
 ## Todo
 
