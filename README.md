@@ -1,6 +1,6 @@
 ﻿# AntiRickRoll
 
-Chrome webstore link: [Currently awaiting manual verification]
+Chrome webstore link: https://chrome.google.com/webstore/detail/antirickroll/mpnckpmpddjcgkpjkmmakcamjhceadne/
 
 Firefox addons link: https://addons.mozilla.org/en-US/firefox/addon/antirickroll/
 
