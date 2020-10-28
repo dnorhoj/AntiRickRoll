@@ -1,8 +1,9 @@
 ﻿# AntiRickRoll
 
-Chrome webstore link: https://chrome.google.com/webstore/detail/antirickroll/mpnckpmpddjcgkpjkmmakcamjhceadne/
+## Installing
 
-Firefox addons link: https://addons.mozilla.org/en-US/firefox/addon/antirickroll/
+Install for [Chrome](https://chrome.google.com/webstore/detail/antirickroll/mpnckpmpddjcgkpjkmmakcamjhceadne/).
+Install for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/antirickroll/).
 
 ## Todo
 
