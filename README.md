@@ -3,6 +3,7 @@
 ## Installing
 
 Install for [Chrome](https://chrome.google.com/webstore/detail/antirickroll/mpnckpmpddjcgkpjkmmakcamjhceadne/).
+
 Install for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/antirickroll/).
 
 ## Todo
