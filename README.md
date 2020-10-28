@@ -12,3 +12,7 @@ Install for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/antirickrol
 - [x] Firefox support
 - [ ] Custom links to block
 - [ ] Some kind of dashboard with stats, etc.
+
+## Contributing
+
+Just send a pull request, bruh.
