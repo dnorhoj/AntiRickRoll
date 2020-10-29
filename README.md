@@ -15,7 +15,7 @@ Install for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/antirickrol
 
 ## Known bugs
 
-The first rickroll you encounter with the extension will not be blocked, this, however only seems to impact Chrome users and not on Firefox. I am currently investigating why this is happening.
+Rickrolls loaded from youtube itself will not be blocked as of right now. I am working on a fix for this though.
 
 ## Contributing
 
