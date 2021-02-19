@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="/icons/icon16.png" type="image/png">
     <title>Rickroll warning!</title>
     <style>
+
         body {
             --google-gray-700: rgb(95, 99, 104);
             background: #fff;
@@ -92,6 +93,33 @@
             width: 72px;
             background-image: url("warn.png");
         }
+
+        @media (prefers-color-scheme: dark) {
+          body {
+            --google-gray-dark: rgb(155,160,165);
+            background: #202125;
+            color: var(--google-gray-dark);
+          }
+
+          .nav-wrapper .secondary-button {
+            background: #202125;
+            border: 1px solid rgb(154, 160, 166);
+            color: var(--google-gray-dark);
+          }
+
+          .ssl button {
+            background: rgb(26, 115, 232);
+          }
+
+          .error-code {
+            color: var(--google-gray-dark);
+          }
+
+          h1 {
+            color: var(--google-gray-dark);
+          }
+        }
+
     </style>
 </head>
 <body class="ssl">
