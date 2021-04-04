@@ -1,8 +1,8 @@
 {
     "content_scripts": [
         {
-            "js": ["background.js"],
-            "matches": ["https://*.youtube.com/*"],
+            "js": ["content.js"],
+            "matches": ["<all_urls>"],
             "run_at": "document_start"
         }
     ],
