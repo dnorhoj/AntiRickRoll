@@ -94,21 +94,26 @@
             background-image: url("warn.png");
         }
 
+        a {
+            color: rgb(138 180 248);
+        }
+
         @media (prefers-color-scheme: dark) {
           body {
             --google-gray-dark: rgb(155,160,165);
-            background: #202125;
+            background: #202124;
             color: var(--google-gray-dark);
           }
 
           .nav-wrapper .secondary-button {
-            background: #202125;
+            background: #202124;
             border: 1px solid rgb(154, 160, 166);
-            color: var(--google-gray-dark);
+            color: rgb(138, 180, 248);
           }
 
           .ssl button {
-            background: rgb(26, 115, 232);
+            background: rgb(129, 162, 208);
+            color: #202124;
           }
 
           .error-code {
@@ -128,7 +133,7 @@
             <div class="icon"></div>
             <div>
                 <h1>You're about to get Rickrolled!</h1>
-                <p>You clicked on a link that leads to a <strong>RickRoll</strong>!<br>
+                <p>You clicked on a link that leads to a <strong>RickRoll</strong>! <a href="https://antirickroll.theblock.heliohost.org/" target="_blank">Learn more</a><br>
                 <div class="error-code">antirick::BLOCKED_RICKROLL</div>
             </div>
         </div>
