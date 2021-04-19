@@ -14,7 +14,7 @@
         "warn/warn.html"
     ],
     "permissions": [
-        "storage"
+        "storage", "<all_urls>"
     ],
     "icons": {
         "16": "icons/icon16.png",
