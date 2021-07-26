@@ -2,7 +2,7 @@
     "content_scripts": [
         {
             "js": ["content.js"],
-            "matches": ["<all_urls>"],
+            "matches": ["https://*.youtube.com/*"],
             "run_at": "document_start"
         }
     ],
@@ -14,7 +14,7 @@
         "warn/warn.html"
     ],
     "permissions": [
-        "storage", "<all_urls>"
+        "storage"
     ],
     "icons": {
         "16": "icons/icon16.png",
