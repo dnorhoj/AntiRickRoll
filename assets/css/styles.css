@@ -1,0 +1,14 @@
+.boxshadow {
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  transition: ease .3s;
+}
+
+.boxshadow:hover {
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.25);
+  transition: ease .3s;
+}
+
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
