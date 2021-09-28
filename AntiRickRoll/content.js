@@ -5,7 +5,9 @@
         "oHg5SJYRHA0",
         "cvh0nX08nRw",
         "V-_O7nl0Ii0",
-        "2ocykBzWDiM"
+        "2ocykBzWDiM",
+        "j5a0jTc9S10",
+        "HPk-VhRjNI8"
     ];
 
     if(blocked_ids.find(i => location.href.includes(i))) {
