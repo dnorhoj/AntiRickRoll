@@ -1,3 +1,5 @@
+var enabled = true;
+
 (() => {
     let blocked_ids = [
         "dQw4w9WgXcQ",
@@ -10,7 +12,7 @@
         "HPk-VhRjNI8"
     ];
 
-    if(blocked_ids.find(i => location.href.includes(i))) {
+    if(blocked_ids.find(i => location.href.includes(i)) && enabled == true) {
         chrome.storage.local.get('bypassed', result => {
             console.log(result)
             if(result['bypassed'] !== true) {
