@@ -1,4 +1,8 @@
 function toggleBlocking() {
+    if (enabled == true)
+        enabled = false;
+    else
+        enabled = true;
 }
 
 window.onload = function(){
