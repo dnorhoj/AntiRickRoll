@@ -1,24 +1,30 @@
 {
-    "content_scripts": [
-        {
-            "js": ["content.js"],
-            "matches": ["https://*.youtube.com/*"],
-            "run_at": "document_start"
-        }
-    ],
-    "name": "AntiRickRoll",
-    "version": "1.3",
-    "description": "Never gonna rickroll you, never gonna let you get rickrolled.",
-    "manifest_version": 2,
-    "web_accessible_resources": [
-        "warn/warn.html"
-    ],
-    "permissions": [
-        "storage"
-    ],
-    "icons": {
-        "16": "icons/icon16.png",
-        "48": "icons/icon48.png",
-        "128": "icons/icon128.png"
-    }
+	"content_scripts": [
+		{
+			"js": ["content.js"],
+			"matches": ["https://*.youtube.com/*"],
+			"run_at": "document_start"
+		}
+	],
+	"name": "AntiRickRoll",
+	"version": "1.4",
+	"description": "Never gonna rickroll you, never gonna let you get rickrolled.",
+	"manifest_version": 3,
+	"web_accessible_resources": [
+		{
+			"resources": ["warn/warn.html"],
+			"matches": ["<all_urls>"]
+		}
+	],
+	"permissions": [
+		"storage"
+	],
+	"action": {
+		"default_popup": "popup/popup.html"
+	},
+	"icons": {
+		"16": "icons/icon16.png",
+		"48": "icons/icon48.png",
+		"128": "icons/icon128.png"
+	}
 }
