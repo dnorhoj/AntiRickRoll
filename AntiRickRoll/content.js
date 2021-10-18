@@ -1,5 +1,4 @@
 (() => {
-    let enabled = true;
     let blocked_ids = [
         "dQw4w9WgXcQ",
         "-51AfyMqnpI",
@@ -11,14 +10,13 @@
         "HPk-VhRjNI8"
     ];
 
-    if(enabled && blocked_ids.find(i => location.href.includes(i))) {
-        chrome.storage.local.get('bypassed', result => {
-            console.log(result)
-            if(result['bypassed'] !== true) {
+    chrome.storage.local.get(['disabled', 'bypassed'], res => {
+        if(!res.disabled && blocked_ids.find(i => location.href.includes(i))) {
+            if(!res.bypassed) {
                 location = chrome.runtime.getURL("warn/warn.html")+"?"+location.href;
             } else {
                 chrome.storage.local.set({"bypassed": false})
             }
-        });
-    }
+        }
+    });
 })();

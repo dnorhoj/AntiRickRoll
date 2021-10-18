@@ -1,143 +1,143 @@
 <!DOCTYPE html>
-<html dir="ltr" lang="en">
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta name="theme-color" content="#fff">
-    <meta name="viewport" content="initial-scale=1, minimum-scale=1, width=device-width">
-    <link rel="shortcut icon" href="/icons/icon16.png" type="image/png">
-    <title>Rickroll warning!</title>
-    <style>
+	<meta charset="utf-8">
+	<meta name="theme-color" content="#fff">
+	<meta name="viewport" content="initial-scale=1, minimum-scale=1, width=device-width">
+	<link rel="shortcut icon" href="/icons/icon16.png" type="image/png">
+	<title>Rickroll warning!</title>
+	<style>
 
-        body {
-            --google-gray-700: rgb(95, 99, 104);
-            background: #fff;
-            color: var(--google-gray-700);
-            word-wrap: break-word;
-            font-family: 'Segoe UI', Tahoma, sans-serif;
-            font-size: 75%;
-        }
+		body {
+			--google-gray-700: rgb(95, 99, 104);
+			background: #fff;
+			color: var(--google-gray-700);
+			word-wrap: break-word;
+			font-family: 'Segoe UI', Tahoma, sans-serif;
+			font-size: 75%;
+		}
 
-        .nav-wrapper .secondary-button {
-            background: #fff;
-            border: 1px solid rgb(154, 160, 166);
-            color: var(--google-gray-700);
-            float: none;
-            margin: 0;
-            padding: 8px 16px;
-        }
+		.nav-wrapper .secondary-button {
+			background: #fff;
+			border: 1px solid rgb(154, 160, 166);
+			color: var(--google-gray-700);
+			float: none;
+			margin: 0;
+			padding: 8px 16px;
+		}
 
-        html {
-            -webkit-text-size-adjust: 100%;
-            font-size: 125%;
-        }
+		html {
+			-webkit-text-size-adjust: 100%;
+			font-size: 125%;
+		}
 
-        button {
-            border: 0;
-            border-radius: 4px;
-            box-sizing: border-box;
-            color: #fff;
-            cursor: pointer;
-            float: right;
-            font-size: .875em;
-            margin: 0;
-            padding: 8px 16px;
-            transition: box-shadow 150ms cubic-bezier(0.4, 0, 0.2, 1);
-            user-select: none;
-            font-family: 'Segoe UI', Tahoma, sans-serif;
-        }
+		button {
+			border: 0;
+			border-radius: 4px;
+			box-sizing: border-box;
+			color: #fff;
+			cursor: pointer;
+			float: right;
+			font-size: .875em;
+			margin: 0;
+			padding: 8px 16px;
+			transition: box-shadow 150ms cubic-bezier(0.4, 0, 0.2, 1);
+			user-select: none;
+			font-family: 'Segoe UI', Tahoma, sans-serif;
+		}
 
-        .ssl button {
-            background: rgb(26, 115, 232);
-        }
+		.ssl button {
+			background: rgb(26, 115, 232);
+		}
 
-        button:active {
-            background: rgb(25, 103, 210);
-            outline: 0;
-        }
+		button:active {
+			background: rgb(25, 103, 210);
+			outline: 0;
+		}
 
-        .error-code {
-            color: var(--google-gray-700);
-            font-size: .86667em;
-            text-transform: uppercase;
-            margin-top: 12px;
-        }
+		.error-code {
+			color: var(--google-gray-700);
+			font-size: .86667em;
+			text-transform: uppercase;
+			margin-top: 12px;
+		}
 
-        h1 {
-            color: rgb(32, 33, 36);
-            font-size: 1.6em;
-            font-weight: normal;
-            line-height: 1.25em;
-            margin-bottom: 16px;
-        }
+		h1 {
+			color: rgb(32, 33, 36);
+			font-size: 1.6em;
+			font-weight: normal;
+			line-height: 1.25em;
+			margin-bottom: 16px;
+		}
 
-        .interstitial-wrapper {
-            box-sizing: border-box;
-            font-size: 1em;
-            line-height: 1.6em;
-            margin: 14vh auto 0;
-            max-width: 600px;
-            width: 100%;
-        }
+		.interstitial-wrapper {
+			box-sizing: border-box;
+			font-size: 1em;
+			line-height: 1.6em;
+			margin: 14vh auto 0;
+			max-width: 600px;
+			width: 100%;
+		}
 
-        #main-message>p {
-            display: inline;
-        }
+		#main-message>p {
+			display: inline;
+		}
 
-        .nav-wrapper {
-            margin-top: 40px;
-        }
+		.nav-wrapper {
+			margin-top: 40px;
+		}
 
-        .icon {
-            height: 72px;
-            margin: 0 0 40px;
-            width: 72px;
-            background-image: url("warn.png");
-        }
+		.icon {
+			height: 72px;
+			margin: 0 0 40px;
+			width: 72px;
+			background-image: url("warn.png");
+		}
 
-        @media (prefers-color-scheme: dark) {
-          body {
-            --google-gray-dark: rgb(155,160,165);
-            background: #202124;
-            color: var(--google-gray-dark);
-          }
+		@media (prefers-color-scheme: dark) {
+			body {
+				--google-gray-dark: rgb(155,160,165);
+				background: #202124;
+				color: var(--google-gray-dark);
+			}
 
-          .nav-wrapper .secondary-button {
-            background: #202124;
-            border: 1px solid rgb(154, 160, 166);
-            color: rgb(138, 180, 248);
-          }
+			.nav-wrapper .secondary-button {
+				background: #202124;
+				border: 1px solid rgb(154, 160, 166);
+				color: rgb(138, 180, 248);
+			}
 
-          .ssl button {
-            background: rgb(129, 162, 208);
-            color: #202124;
-          }
+			.ssl button {
+				background: rgb(129, 162, 208);
+				color: #202124;
+			}
 
-          .error-code {
-            color: var(--google-gray-dark);
-          }
+			.error-code {
+				color: var(--google-gray-dark);
+			}
 
-          h1 {
-            color: var(--google-gray-dark);
-          }
-        }
+			h1 {
+				color: var(--google-gray-dark);
+			}
+		}
 
-    </style>
+	</style>
 </head>
 <body class="ssl">
-    <div class="interstitial-wrapper">
-        <div>
-            <div class="icon"></div>
-            <div>
-                <h1>You're about to get Rickrolled!</h1>
-                <p>You clicked on a link that leads to a <strong>RickRoll</strong>!<br>
-                <div class="error-code">antirick::BLOCKED_RICKROLL</div>
-            </div>
-        </div>
-        <div class="nav-wrapper">
-            <button id="back-btn">Back to safety</button>
-            <button id="continue-btn" class="secondary-button">Continue</button>
-        </div>
-    </div>
-    <script src="warn.js"></script>
+	<div class="interstitial-wrapper">
+		<div>
+			<div class="icon"></div>
+			<div>
+				<h1>You're about to get Rickrolled!</h1>
+				<p>You clicked on a link that leads to a <strong>RickRoll</strong>!<br>
+				<div class="error-code">antirick::BLOCKED_RICKROLL</div>
+			</div>
+		</div>
+		<div class="nav-wrapper">
+			<button id="back-btn">Back to safety</button>
+			<button id="continue-btn" class="secondary-button">Continue</button>
+		</div>
+	</div>
+	<script src="warn.js"></script>
 </body>
 </html>
