@@ -17,26 +17,14 @@
     {
         chrome.storage.local.get('total', result =>
         {
-        if (result['total'] === null)
-        {
-            chrome.storage.local.set({"total": 0})
-            chrome.storage.local.set({"idArr": [false,false,false,false,false,false,true,true]})
-        }
-
-            chrome.storage.local.set({"total": result['total'] + 1})
+            total = result['total'] || 0;
+            chrome.storage.local.set({"total": total + 1})
         });
 
         chrome.storage.local.get('idArr', result =>
-        {
-            let tempArray = [false,false,false,false,false,false,false,false];
-
-            if (result['idArr'] !== null)
-            {
-                tempArray = result['idArr'];
-            }
-
+        {   
+            tempArray = result['idArr'] || [false,false,false,false,false,false,false,false];
             tempArray[blocked_ids.findIndex(i => location.href.includes(i))] = true;
-
             chrome.storage.local.set({"idArr": tempArray})
         });
 
