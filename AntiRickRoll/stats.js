@@ -33,6 +33,10 @@ window.onload = function()
 				unique += 1;
 			}
 		}
+		if (total === 0)
+		{
+			unique = 0;
+		}
 		document.getElementById('unique').innerHTML = unique;
 	});
 };
