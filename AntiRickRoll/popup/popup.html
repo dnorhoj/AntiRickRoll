@@ -2,60 +2,20 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<style>
-		body {
-			--google-gray-700: rgb(95, 99, 104);
-			background: #fff;
-			color: var(--google-gray-700);
-			font-family: 'Segoe UI', Tahoma, sans-serif;
-			font-size: 75%;
-		}
-
-		.brand {
-			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-			padding-top: .3125rem;
-			padding-bottom: 1rem;
-			font-size: 1rem;
-			text-decoration: none;
-			white-space: nowrap;
-			font-weight: bold;
-			color: rgb(51, 51, 51);
-		}
-
-		.brand img {
-			height: 32px;
-			width: 32px;
-			vertical-align: middle;
-		}
-
-		#toggler {
-			transition: ease 100ms;
-			width: 100%;
-			font-weight: bold;
-			background: #fff;
-			border: solid 1px;
-			border-radius: 10px;
-			padding: 10px;
-			cursor: pointer;
-		}
-
-		#toggler:hover {
-			transition: ease 100ms;
-			background-color: #aaa;
-		}
-	</style>
+	<link rel="stylesheet" href="popup.css">
 </head>
 <body>
 	<div class="brand">
 		<img src="/icons/icon48.png" alt="Logo">&nbsp; AntiRickRoll
 	</div>
-	<button id="toggler"></button>
-	</br>
-	</br>
-	Total RickRolls blocked: <p id="total"></p></br>
-	Unique links blocked: <p id="unique"></p></br>
+	
+	<div class="total">
+		<span>RickRolls blocked: <b id="total"></b></span>
+		<br><br>
+	</div>
 
-	<script src="warn/content.js"></script>
+	<button id="toggler"></button>
+	
 	<script src="popup.js"></script>
 </body>
 </html>
