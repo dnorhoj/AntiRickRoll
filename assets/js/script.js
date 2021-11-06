@@ -14,4 +14,8 @@ window.onload = () => {
             DarkReader.enable();
         }
     });
+
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        switcher.click();
+    }
 };
