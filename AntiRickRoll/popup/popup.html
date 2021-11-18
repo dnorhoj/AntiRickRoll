@@ -1,21 +1,38 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="popup.css">
-</head>
-<body>
-	<div class="brand">
-		<img src="/icons/icon48.png" alt="Logo">&nbsp; AntiRickRoll
-	</div>
-	
-	<div class="total">
-		<span>RickRolls blocked: <b id="total"></b></span>
-		<br><br>
-	</div>
+<html lang="en">
 
-	<button id="toggler"></button>
-	
-	<script src="popup.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>AntiRickRoll</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img draggable="false" src="assets/img/icon48.png">
+        </div>
+        <div class="content">
+            
+        </div>
+        <nav class="nav">
+            <ul>
+                <li>
+                    <a href="popup.html" class="selected"><i class="bi bi-house-door-fill"></i></a>
+                </li>
+                <li>
+                    <a href="stats.html"><i class="bi bi-graph-up"></i></a>
+                </li>
+                <li>
+                    <a href="rickrolldb.html"><i class="bi bi-list-ul"></i></a>
+                </li>
+                <li>
+                    <a href="settings.html"><i class="bi bi-gear-fill"></i></a>
+                </li>
+            </ul>
+        </div>
 </body>
+
 </html>
