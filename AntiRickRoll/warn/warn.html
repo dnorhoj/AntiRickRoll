@@ -1,143 +1,168 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="theme-color" content="#fff">
-	<meta name="viewport" content="initial-scale=1, minimum-scale=1, width=device-width">
-	<link rel="shortcut icon" href="/icons/icon16.png" type="image/png">
-	<title>Rickroll warning!</title>
-	<style>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="theme-color" content="#fff" />
+    <link rel="icon" href="/icons/icon.svg" type="image/svg+xml" />
+    <meta
+      name="viewport"
+      content="initial-scale=1, minimum-scale=1, width=device-width"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Rickroll Warning</title>
+    <style>
+      body {
+        background: #fff;
+        color: black;
+        word-wrap: break-word;
+        font-family: "Inter", Tahoma, sans-serif;
+        font-size: 75%;
+        margin-left: -100px;
+      }
 
-		body {
-			--google-gray-700: rgb(95, 99, 104);
-			background: #fff;
-			color: var(--google-gray-700);
-			word-wrap: break-word;
-			font-family: 'Segoe UI', Tahoma, sans-serif;
-			font-size: 75%;
-		}
+      .nav-wrapper .secondary-button {
+        background: #fff;
+        border: 1px solid #4a4a4f;
+        color: #4a4a4f;
+        float: right;
+        margin-right: -12vh;
+        padding: 8px 20px;
+      }
 
-		.nav-wrapper .secondary-button {
-			background: #fff;
-			border: 1px solid rgb(154, 160, 166);
-			color: var(--google-gray-700);
-			float: none;
-			margin: 0;
-			padding: 8px 16px;
-		}
+      .nav-wrapper .secondary-button:hover {
+        border: 1px solid #737373;
+        background: #737373;
+        color: white;
+      }
 
-		html {
-			-webkit-text-size-adjust: 100%;
-			font-size: 125%;
-		}
+      .nav-wrapper .secondary-button:active {
+        border: 1px solid #4a4a4f;
+        background: #4a4a4f;
+        color: white;
+      }
 
-		button {
-			border: 0;
-			border-radius: 4px;
-			box-sizing: border-box;
-			color: #fff;
-			cursor: pointer;
-			float: right;
-			font-size: .875em;
-			margin: 0;
-			padding: 8px 16px;
-			transition: box-shadow 150ms cubic-bezier(0.4, 0, 0.2, 1);
-			user-select: none;
-			font-family: 'Segoe UI', Tahoma, sans-serif;
-		}
+      html {
+        -webkit-text-size-adjust: 100%;
+        font-size: 125%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
 
-		.ssl button {
-			background: rgb(26, 115, 232);
-		}
+      button {
+        border: 0;
+        border-radius: 4px;
+        box-sizing: border-box;
+        color: #fff;
+        cursor: pointer;
+        float: right;
+        font-size: 0.875em;
+        margin-right: 3px;
+        padding: 8px 20px;
+        user-select: none;
+        font-family: "Inter", Tahoma, sans-serif;
+        font-weight: 600;
+      }
 
-		button:active {
-			background: rgb(25, 103, 210);
-			outline: 0;
-		}
+      .ssl button {
+        border: 1px solid #0061e0;
+        background: #0061e0;
+      }
 
-		.error-code {
-			color: var(--google-gray-700);
-			font-size: .86667em;
-			text-transform: uppercase;
-			margin-top: 12px;
-		}
+      button:hover {
+        border: 1px solid #0250bb;
+        background: #0250bb;
+        outline: 0;
+      }
 
-		h1 {
-			color: rgb(32, 33, 36);
-			font-size: 1.6em;
-			font-weight: normal;
-			line-height: 1.25em;
-			margin-bottom: 16px;
-		}
+      button:active {
+        border: 1px solid #053e94;
+        background: #053e94;
+        outline: 0;
+      }
 
-		.interstitial-wrapper {
-			box-sizing: border-box;
-			font-size: 1em;
-			line-height: 1.6em;
-			margin: 14vh auto 0;
-			max-width: 600px;
-			width: 100%;
-		}
+      h1 {
+        color: rgb(32, 33, 36);
+        font-size: 2em;
+        font-weight: 200;
+        line-height: 1.2em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+      }
 
-		#main-message>p {
-			display: inline;
-		}
+      .interstitial-wrapper {
+        box-sizing: border-box;
+        font-size: 1em;
+        line-height: 1.6em;
+        margin: 45vh auto 0;
+        max-width: 700px;
+        width: 100%;
+      }
 
-		.nav-wrapper {
-			margin-top: 40px;
-		}
+      #main-message > p {
+        display: inline;
+      }
 
-		.icon {
-			height: 72px;
-			margin: 0 0 40px;
-			width: 72px;
-			background-image: url("warn.png");
-		}
+      .nav-wrapper {
+        margin-top: 30px;
+      }
 
-		@media (prefers-color-scheme: dark) {
-			body {
-				--google-gray-dark: rgb(155,160,165);
-				background: #202124;
-				color: var(--google-gray-dark);
-			}
+      @media (prefers-color-scheme: dark) {
+        body {
+          background: rgb(28, 27, 34);
+          color: white;
+        }
 
-			.nav-wrapper .secondary-button {
-				background: #202124;
-				border: 1px solid rgb(154, 160, 166);
-				color: rgb(138, 180, 248);
-			}
+        .nav-wrapper .secondary-button {
+          background: #202124;
+          border: 1px solid white;
+          color: white;
+        }
 
-			.ssl button {
-				background: rgb(129, 162, 208);
-				color: #202124;
-			}
+        .ssl button {
+          background: rgb(0, 221, 255);
+          border: 1px solid rgb(0, 221, 255);
+          color: #0c0c0d;
+        }
 
-			.error-code {
-				color: var(--google-gray-dark);
-			}
+        .ssl button:hover {
+          border: 1px solid rgb(128, 235, 255);
+          background: rgb(128, 235, 255);
+          color: #0c0c0d;
+        }
 
-			h1 {
-				color: var(--google-gray-dark);
-			}
-		}
+        .ssl button:active {
+          border: 1px solid rgb(170, 242, 255);
+          background: rgb(170, 242, 255);
+          color: #0c0c0d;
+        }
 
-	</style>
-</head>
-<body class="ssl">
-	<div class="interstitial-wrapper">
-		<div>
-			<div class="icon"></div>
-			<div>
-				<h1>You're about to get Rickrolled!</h1>
-				<p>You clicked on a link that leads to a <strong>RickRoll</strong>!<br>
-				<div class="error-code">antirick::BLOCKED_RICKROLL</div>
-			</div>
-		</div>
-		<div class="nav-wrapper">
-			<button id="back-btn">Back to safety</button>
-			<button id="continue-btn" class="secondary-button">Continue</button>
-		</div>
-	</div>
-	<script src="warn.js"></script>
-</body>
+        h1 {
+          color: white;
+        }
+      }
+    </style>
+  </head>
+  <body class="ssl">
+    <div class="interstitial-wrapper">
+      <div>
+        <h1>It's a Rickroll.</h1>
+        <p>
+          The plugin blocked this page because you clicked on a link that leads
+          to a
+          <strong>Rickroll</strong>.<br />
+        </p>
+      </div>
+      <div class="nav-wrapper">
+        <button id="continue-btn" class="secondary-button">Continue</button>
+        <button id="back-btn">Go back</button>
+      </div>
+    </div>
+    <script src="warn.js"></script>
+  </body>
 </html>
