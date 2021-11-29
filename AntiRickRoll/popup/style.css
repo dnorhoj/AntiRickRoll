@@ -1,0 +1,134 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css");
+html, body {
+    width: 375px !important;
+    height: 600px !important;
+    overflow: hidden;
+    color: #000;
+    background-color: #f0f0f0;
+    margin: 0px;
+}
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+    border-bottom: #000 solid 1px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.header img {
+    width: 36px;
+    height: 36px;
+    user-select: none;
+}
+
+.header span {
+    font-weight: bold;
+    font-size: 15px;
+    user-select: none;
+}
+
+.nav {
+    background-color: #fff;
+    width: 100%;
+    border-top: 1px solid #000;
+    bottom: 0;
+    left: 0;
+    border-top: rgb(0, 0, 0) solid 1px;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav a {
+    font-size: 20px;
+    color: #000;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    transition: hover 0.1s ease;
+    display: flex;
+    text-decoration: none;
+    flex-direction: column;
+    cursor: default;
+}
+
+.nav a span {
+    font-size: 14px;
+    display: block;
+}
+
+.nav a:hover {
+    background-color: #efefef;
+}
+
+.nav .selected {
+    background-color: #dfdfdf;
+}
+
+.block-header {
+    padding: 0.5rem 0.5rem 0.2rem 0.5rem;
+    background-color: #f0f0f0;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.block-content {
+    font-size: 15px;
+    padding: 0.5rem;
+    background-color: #ffffff;
+    border-top: 10px black;
+}
+
+.block-content:hover {
+    background-color: #dfdfdf;
+}
+
+.setting {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer; }
+    input[type="checkbox"]:focus {
+      outline: 0; 
+    }
+
+.toggle {
+    height: 22px;
+    width: 37px;
+    border-radius: 16px;
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    border: 2px solid #474755;
+    background: rgb(184, 0, 0);
+    transition: all .2s ease; }
+    .toggle:after {
+      content: '';
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      width: 14px;
+      height: 14px;
+      border-radius: 100%;
+      background: white;
+      box-shadow: 0 1px 2px rgba(44, 44, 44, 0.2);
+      transition: all 0.2s cubic-bezier(0.5, 0.1, 0.75, 1.35); }
+    .toggle:checked {
+      background: rgb(0, 187, 0);
+    }
+    .toggle:checked:after {
+      transform: translatex(16px); }
+  

@@ -1,21 +1,43 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="popup.css">
-</head>
-<body>
-	<div class="brand">
-		<img src="/icons/icon48.png" alt="Logo">&nbsp; AntiRickRoll
-	</div>
-	
-	<div class="total">
-		<span>RickRolls blocked: <b id="total"></b></span>
-		<br><br>
-	</div>
+<html lang="en">
 
-	<button id="toggler"></button>
-	
-	<script src="popup.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>AntiRickRoll</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img draggable="false" src="assets/img/icon48.png">
+            <span>(BETA)</span>
+        </div>
+        <div class="content home">
+            <div class="block">
+                <div class="block-header">
+                    <span>TOGGLES</span>
+                </div>
+                <div class="block-content">
+                    <div class="setting">
+                        <span>Enabled</span>
+                        <input type="checkbox" id="enableToggle" class="toggle">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="nav">
+            <a href="popup.html" class="selected"><i class="bi bi-house-door-fill"></i><span>Home</span></a>
+            <!--
+            <a><i class="bi bi-graph-up"></i><span>Stats</span></a>
+            <a><i class="bi bi-list-ul"></i><span>Links</span></a>
+            <a><i class="bi bi-gear-fill"></i><span>Settings</span></a>
+            -->
+        </nav>
+    </div>
+    <script type="text/javascript" src="popup.js"></script>
 </body>
+
 </html>
