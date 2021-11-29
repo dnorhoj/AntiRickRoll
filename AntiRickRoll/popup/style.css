@@ -19,55 +19,31 @@ html, body {
     padding: 10px;
 }
 
-.header > img {
+.header img {
     width: 36px;
     height: 36px;
     user-select: none;
 }
 
-.close {
-    font-size: 36px;
-    padding: 0px;
-}
-
 .nav {
     background-color: #fff;
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
     width: 100%;
-    height: 55px;
     border-top: 1px solid #000;
     bottom: 0;
     left: 0;
-    right: 0;
     border-top: rgb(0, 0, 0) solid 1px;
     position: fixed;
-}
-
-.nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
     display: flex;
-    align-items: center;
-    align-self: center;
-}
-
-.nav li {
-    display: flex;
-    flex-grow: 1;
-    align-self: center;
-    align-items: center;
+    justify-content: space-around;
 }
 
 .nav a {
-    display: block;
-    text-align: center;
-    font-size: 20px;
+    font-size: 26px;
     color: rgb(0, 0, 0);
-    min-width: 100%;
-    height: 55px;
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+    transition: all 0.1s ease;
 }
 
 .nav a:hover {
@@ -75,5 +51,5 @@ html, body {
 }
 
 .nav .selected {
-    background-color: #efefef;
+    background-color: #dfdfdf;
 }
