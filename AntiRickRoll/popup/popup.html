@@ -13,27 +13,31 @@
     <div class="container">
         <div class="header">
             <img draggable="false" src="assets/img/icon48.png">
+            <span>(BETA)</span>
         </div>
         <div class="content home">
             <div class="block">
                 <div class="block-header">
-                    <span>Toggles</span>
+                    <span>TOGGLES</span>
                 </div>
                 <div class="block-content">
-                    <div class="toggle">
+                    <div class="setting">
                         <span>Enabled</span>
-                        <input type="checkbox">
+                        <input type="checkbox" id="enableToggle" class="toggle">
                     </div>
                 </div>
             </div>
         </div>
         <nav class="nav">
-            <a href="popup.html" class="selected"><i class="bi bi-house-door-fill"></i></a>
-            <a href="stats.html"><i class="bi bi-graph-up"></i></a>
-            <a href="rickrolldb.html"><i class="bi bi-list-ul"></i></a>
-            <a href="settings.html"><i class="bi bi-gear-fill"></i></a>
+            <a href="popup.html" class="selected"><i class="bi bi-house-door-fill"></i><span>Home</span></a>
+            <!--
+            <a><i class="bi bi-graph-up"></i><span>Stats</span></a>
+            <a><i class="bi bi-list-ul"></i><span>Links</span></a>
+            <a><i class="bi bi-gear-fill"></i><span>Settings</span></a>
+            -->
         </nav>
     </div>
+    <script type="text/javascript" src="popup.js"></script>
 </body>
 
 </html>
