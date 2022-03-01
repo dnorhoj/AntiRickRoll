@@ -32,6 +32,7 @@
     
     // Make sure we're not already on a blocked link
     checkLink();
-    // Hook into history.pushState() (Youtube fix)
-    window.onpopstate = checkLink;
+
+    // Hook into youtube navigation event
+    addEventListener("yt-navigate-start", checkLink);
 })();
