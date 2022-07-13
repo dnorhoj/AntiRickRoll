@@ -9,10 +9,13 @@
         "2ocykBzWDiM",
         "j5a0jTc9S10",
         "HPk-VhRjNI8",
-        "IO9XlQrEt2Y"
+        "IO9XlQrEt2Y",
+        "QB7ACr7pUuE",
+        "iik25wqIuFo"
     ];
 
-    chrome.storage.local.get(['disabled', 'bypassed', 'total'], res => {
+    // We grab the storage every time in case an id gets added while we're browsing (futureproofing)
+    const checkLink = () => chrome.storage.local.get(['disabled', 'bypassed', 'total'], res => {
         // Check if blocking is enabled and if url in blocked links
         if(!res.disabled && blocked_ids.find(i => location.href.includes(i))) {
             // Update total rickrolls blocked counter
@@ -26,4 +29,10 @@
             }
         }
     });
+    
+    // Make sure we're not already on a blocked link
+    checkLink();
+
+    // Hook into youtube navigation event
+    addEventListener("yt-navigate-start", checkLink);
 })();

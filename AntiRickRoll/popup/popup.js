@@ -1,9 +1,9 @@
 (() => {
 	// Get elements
 	let toggler = document.querySelector('#enableToggle');
-    console.log(toggler);
-    console.log("toggler");
-    toggler.checked = true;
+	console.log(toggler);
+	console.log("toggler");
+    	toggler.checked = true;
 
 	// Set toggler's initial value
 	chrome.storage.local.get('disabled', res => {

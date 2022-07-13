@@ -24,7 +24,7 @@ Install for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/antirickrol
 
 ## Known bugs
 
-Rickrolls loaded from youtube itself will not be blocked as of right now. I am working on a fix for this though.
+
 
 ## Contributing
 
