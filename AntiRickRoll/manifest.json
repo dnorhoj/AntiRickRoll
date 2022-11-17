@@ -1,4 +1,5 @@
 {
+	"$schema": "https://json.schemastore.org/chrome-manifest",
 	"manifest_version": 3,
 	"version": "1.5",
 	"name": "AntiRickRoll",
@@ -13,15 +14,14 @@
 	"web_accessible_resources": [
 		{
 			"resources": ["warn/warn.html"],
-			"matches": ["<all_urls>"],
-			"all_frames": true
+			"matches": ["<all_urls>"]
 		}
 	],
 	"permissions": [
 		"storage"
 	],
 	"action": {
-		"default_popup": "popup/popup.html"
+		"default_popup": "popup/index.html"
 	},
 	"icons": {
 		"16": "icons/icon16.png",
