@@ -1,29 +1,28 @@
 <script>
-    let counter = null;
+    import { page } from "./lib/stores";
 
-    chrome.storage.local
-        .get("counter")
-        .then((data) => (counter = data.counter ?? 0));
-    
-    const increment = () => {
-        counter++;
-        chrome.storage.local.set({ counter });
-    }
+    import BottomNav from "./lib/layout/bottom-nav.svelte";
+    import Header from "./lib/layout/header.svelte";
+    import Home from "./pages/home.svelte";
+    import Rickrolldb from "./pages/rickrolldb.svelte";
+    import Settings from "./pages/settings.svelte";
+    import Stats from "./pages/stats.svelte";
 </script>
 
-<div class="p-5">
-    <h1>Svelte test</h1>
+<div class="h-96">
+    <Header />
 
-    {#if counter === null}
-        <h1>Loading...</h1>
-    {:else}
-        <button
-            class="p-2 bg-blue-500 text-white rounded-md"
-            on:click={increment}
-        >
-            Increment
-        </button>
-
-        <p class="mt-2">Counter: {counter}</p>
-    {/if}
+    <div>
+        {#if $page === 0}
+            <Home />
+        {:else if $page === 1}
+            <Stats />
+        {:else if $page === 2}
+            <Rickrolldb />
+        {:else if $page === 3}
+            <Settings />
+        {/if}
+    </div>
 </div>
+
+<BottomNav />
