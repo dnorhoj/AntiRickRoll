@@ -7,22 +7,33 @@
     import Rickrolldb from "./pages/rickrolldb.svelte";
     import Settings from "./pages/settings.svelte";
     import Stats from "./pages/stats.svelte";
+    import { fade } from "svelte/transition";
+
+    const fadeOptions = {
+        duration: 200,
+    };
 </script>
 
-<div class="h-96">
-    <Header />
+<Header />
 
-    <div>
-        {#if $page === 0}
+<div class="h-96 overflow-x-scroll">
+    {#if $page === 0}
+        <div in:fade={fadeOptions}>
             <Home />
-        {:else if $page === 1}
+        </div>
+    {:else if $page === 1}
+        <div in:fade={fadeOptions}>
             <Stats />
-        {:else if $page === 2}
+        </div>
+    {:else if $page === 2}
+        <div in:fade={fadeOptions}>
             <Rickrolldb />
-        {:else if $page === 3}
+        </div>
+    {:else if $page === 3}
+        <div in:fade={fadeOptions}>
             <Settings />
-        {/if}
-    </div>
+        </div>
+    {/if}
 </div>
 
 <BottomNav />
