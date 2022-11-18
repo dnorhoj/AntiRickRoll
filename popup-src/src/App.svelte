@@ -8,7 +8,7 @@
     const increment = () => {
         counter++;
         chrome.storage.local.set({ counter });
-    };
+    }
 </script>
 
 <div class="p-5">

@@ -10,6 +10,7 @@
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^1.1.0",
+    "@types/chrome": "^0.0.202",
     "autoprefixer": "^10.4.13",
     "postcss": "^8.4.19",
     "svelte": "^3.52.0",
