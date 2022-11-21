@@ -6,7 +6,7 @@
 	"description": "Never gonna rickroll you, never gonna let you get rickrolled.",
 	"content_scripts": [
 		{
-			"js": ["content.js"],
+			"js": ["background/content.js"],
 			"matches": ["https://*.youtube.com/*"],
 			"run_at": "document_start"
 		}
