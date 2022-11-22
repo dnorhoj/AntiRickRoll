@@ -2,7 +2,7 @@
     <div class="flex items-center space-x-1">
         <img
             draggable="false"
-            src="icon48.png"
+            src="../icons/icon48.png"
             alt="AntiRickRoll Logo"
             class="aspect-square h-full"
         />
