@@ -6,7 +6,7 @@
             alt="AntiRickRoll Logo"
             class="aspect-square h-full"
         />
-        <h1 class="font-bold">AntiRickRoll</h1>
+        <h1 class="font-semibold">AntiRickRoll</h1>
     </div>
     <div class="m-1">
         <span class="text-sm text-neutral-800 font-bold">(BETA)</span>
