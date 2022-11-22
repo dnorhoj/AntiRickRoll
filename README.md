@@ -1,7 +1,8 @@
 # AntiRickRoll
 
-![Chrome Web Store](https://img.shields.io/chrome-web-store/users/mpnckpmpddjcgkpjkmmakcamjhceadne)
-![Chrome Web Store](https://img.shields.io/chrome-web-store/rating/mpnckpmpddjcgkpjkmmakcamjhceadne)
+[![Chrome Web Store](https://img.shields.io/chrome-web-store/users/mpnckpmpddjcgkpjkmmakcamjhceadne)](https://antirickroll.com/install)
+[![Chrome Web Store](https://img.shields.io/chrome-web-store/rating/mpnckpmpddjcgkpjkmmakcamjhceadne)](https://antirickroll.com/install)
+[![Discord](https://img.shields.io/badge/Discord-%235865F2.svg?style=flat&logo=discord&logoColor=white)](https://discord.gg/y7jCZCX2Bz)
 
 > <https://antirickroll.com>
 
@@ -26,8 +27,6 @@ Install for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/antirickrol
 - [x] Firefox support
 - [ ] Custom links to block
 - [ ] Some kind of dashboard with stats, etc.
-
-## 
 
 ## Known bugs
 
