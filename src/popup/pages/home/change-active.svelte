@@ -1,6 +1,7 @@
 <script>
     import { onMount } from "svelte";
-    import { Toggle } from "flowbite-svelte";
+    import { Card, Toggle } from "flowbite-svelte";
+    /** @type {import('chrome')} */
 
     let enabled = true;
 
@@ -17,26 +18,13 @@
     });
 </script>
 
-<Toggle bind:checked={enabled} on:change={save}>
-    AntiRickRoll is {enabled ? "Enabled" : "Disabled"}
-</Toggle>
-
-<!--
-<div class="flex justify-between items-center mx-2">
-    <label for="enabled">Enable AntiRickRoll</label>
-    onMount(() => {
-
-    <button
-        class="p-2 m-0.5 rounded-xl"
-        class:text-green-500={!disabled}
-        class:text-red-500={disabled}
-        on:click={toggle}
-    >
-        {#if disabled}
-            <Fa icon={faToggleOff} scale={1.7} />
-        {:else}
-            <Fa icon={faToggleOn} scale={1.7} />
-        {/if}
-    </button>
-</div>
--->
+<Card padding="none">
+    <div class="flex py-4 pl-4">
+        <span class="flex-grow text-gray-700">
+            AntiRickRoll is {enabled ? "enabled" : "disabled"}
+        </span>
+        <div>
+            <Toggle bind:checked={enabled} on:change={save} />
+        </div>
+    </div>
+</Card>

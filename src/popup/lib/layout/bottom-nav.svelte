@@ -5,11 +5,11 @@
         faServer,
         faCog,
     } from "@fortawesome/free-solid-svg-icons";
-    
-    import NavIcon from "./nav-icon.svelte";
-    </script>
 
-<div class="flex flex-row justify-between bg-neutral-100 overflow-hidden">
+    import NavIcon from "./nav-icon.svelte";
+</script>
+
+<div class="flex border-t cursor-pointer">
     <NavIcon target={0} icon={faHome} title="Home" />
     <NavIcon target={1} icon={faChartBar} title="Stats" />
     <NavIcon target={2} icon={faServer} title="RickRolldb" />

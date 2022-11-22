@@ -14,26 +14,28 @@
     };
 </script>
 
-<Header />
+<div class="max-w-fit">
+    <Header />
 
-<div class="h-96 overflow-x-scroll">
-    {#if $page === 0}
-        <div in:fade={fadeOptions}>
-            <Home />
-        </div>
-    {:else if $page === 1}
-        <div in:fade={fadeOptions}>
-            <Stats />
-        </div>
-    {:else if $page === 2}
-        <div in:fade={fadeOptions}>
-            <Rickrolldb />
-        </div>
-    {:else if $page === 3}
-        <div in:fade={fadeOptions}>
-            <Settings />
-        </div>
-    {/if}
+    <div class="h-96 overflow-x-scroll">
+        {#if $page === 0}
+            <div in:fade={fadeOptions}>
+                <Home />
+            </div>
+        {:else if $page === 1}
+            <div in:fade={fadeOptions}>
+                <Stats />
+            </div>
+        {:else if $page === 2}
+            <div in:fade={fadeOptions}>
+                <Rickrolldb />
+            </div>
+        {:else if $page === 3}
+            <div in:fade={fadeOptions}>
+                <Settings />
+            </div>
+        {/if}
+    </div>
+
+    <BottomNav />
 </div>
-
-<BottomNav />

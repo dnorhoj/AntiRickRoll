@@ -14,6 +14,7 @@
   "devDependencies": {
     "@fortawesome/free-brands-svg-icons": "^6.2.1",
     "@fortawesome/free-solid-svg-icons": "^6.2.1",
+    "@types/chrome": "^0.0.202",
     "autoprefixer": "^10.4.13",
     "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.7.2",
@@ -32,6 +33,5 @@
     "tailwindcss": "^3.2.4",
     "webpack": "^5.75.0",
     "webpack-cli": "^5.0.0"
-  },
-  "dependencies": {}
+  }
 }

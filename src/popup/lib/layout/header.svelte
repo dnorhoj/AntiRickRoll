@@ -1,14 +1,11 @@
-<div class="flex justify-between h-12 bg-neutral-100 shadow-md select-none p-2">
-    <div class="flex items-center space-x-1">
-        <img
-            draggable="false"
-            src="../icons/icon48.png"
-            alt="AntiRickRoll Logo"
-            class="aspect-square h-full"
-        />
+<script>
+    import { Navbar, NavBrand, Badge } from "flowbite-svelte";
+</script>
+
+<Navbar navClass="px-2 py-2.5 border-b shadow select-none">
+    <NavBrand href={null}>
+        <img src="../icons/icon48.png" alt="Logo" draggable="false" class="mr-2 h-10" />
         <h1 class="font-semibold">AntiRickRoll</h1>
-    </div>
-    <div class="m-1">
-        <span class="text-sm text-neutral-800 font-bold">(BETA)</span>
-    </div>
-</div>
+    </NavBrand>
+    <Badge>Beta</Badge>
+</Navbar>
