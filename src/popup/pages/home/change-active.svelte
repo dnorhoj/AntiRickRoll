@@ -1,24 +1,30 @@
 <script>
     import { onMount } from "svelte";
-    import Fa from "svelte-fa";
-    import { faToggleOn, faToggleOff } from "@fortawesome/free-solid-svg-icons";
+    import { Toggle } from "flowbite-svelte";
 
-    let disabled;
+    let enabled = true;
 
-    const toggle = () => {
-        disabled = !disabled;
-        chrome.storage.local.set({ extDisabled: disabled });
+    const save = () => {
+        console.log("saving", enabled);
+        chrome.storage.local.set({ extDisabled: !enabled });
     };
 
     onMount(() => {
         chrome.storage.local.get("extDisabled", (result) => {
-            disabled = result.extDisabled;
+            enabled = !result.extDisabled;
+            console.log("loaded", enabled);
         });
     });
 </script>
 
+<Toggle bind:checked={enabled} on:change={save}>
+    AntiRickRoll is {enabled ? "Enabled" : "Disabled"}
+</Toggle>
+
+<!--
 <div class="flex justify-between items-center mx-2">
     <label for="enabled">Enable AntiRickRoll</label>
+    onMount(() => {
 
     <button
         class="p-2 m-0.5 rounded-xl"
@@ -33,3 +39,4 @@
         {/if}
     </button>
 </div>
+-->
