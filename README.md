@@ -8,6 +8,7 @@
 AntiRickRoll is a browser extension made to keep you safe from [rickrolls](https://www.urbandictionary.com/define.php?term=Rick%20Roll) on the internet.
 This works by injecting a warning page whenever you click on a known rickroll link.
 
+![AntiRickRoll example](readme/screenshot_dark.png)
 
 ## Community
 
