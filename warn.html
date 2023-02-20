@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" data-l10n-sync="true" dir="ltr" lang="en-CA">
+  <head>
+    <meta http-equiv="Content-Security-Policy" content="default-src chrome:; object-src 'none'" />
+    <meta name="color-scheme" content="light dark" />
+    <title data-l10n-id="neterror-dns-not-found-title">Server Not Found</title>
+    <link rel="stylesheet" href="chrome://global/skin/aboutNetError.css" type="text/css" media="all" />
+    <link rel="icon" id="favicon" href="chrome://global/skin/icons/info.svg" />
+  </head>
+
+  <body class="neterror">
+    <!-- PAGE CONTAINER (for styling purposes only) -->
+    <div class="container">
+      <div id="text-container">
+        <!-- Error Title -->
+        <div class="title">
+          <h1 class="title-text" data-l10n-id="dnsNotFound-title">You're about to get RickRolled!</h1>
+        </div>
+
+        <!-- Short Description -->
+        <p id="errorShortDesc">You were trying to access a RickRoll, we saved you.</p>
+        <p id="errorShortDesc2"></p>
+
+        <div id="errorWhatToDo" hidden="">
+          <p id="errorWhatToDoTitle" data-l10n-id="certerror-what-can-you-do-about-it-title">What can you do about it?</p>
+          <p id="badStsCertExplanation" hidden=""></p>
+          <p id="errorWhatToDoText"></p>
+        </div>
+
+        <!-- Long Description -->
+        <div id="errorLongDesc"><span data-l10n-id="neterror-dns-not-found-hint-header"><strong>If you entered the right address, you can:</strong></span><ul><li data-l10n-id="neterror-dns-not-found-hint-try-again">Do nothing, we saved you. Just thank us!</li></ul></div>
+          </div>
+      <div id="netErrorButtonContainer" class="button-container"><button class="primary try-again" data-l10n-id="neterror-try-again-button">Modified by Artivain</button>
+      </div>
+      </div>
+    </div>
+  </body>
+  <script src="chrome://global/content/neterror/aboutNetErrorCodes.js"></script>
+  <script type="module" src="chrome://global/content/aboutNetError.mjs"></script>
+</html>
