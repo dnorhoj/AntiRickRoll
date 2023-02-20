@@ -1,143 +1,40 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="theme-color" content="#fff">
-	<meta name="viewport" content="initial-scale=1, minimum-scale=1, width=device-width">
-	<link rel="shortcut icon" href="/icons/icon16.png" type="image/png">
-	<title>Rickroll warning!</title>
-	<style>
+<html xmlns="http://www.w3.org/1999/xhtml" data-l10n-sync="true" dir="ltr" lang="en-CA">
+  <head>
+    <meta http-equiv="Content-Security-Policy" content="default-src chrome:; object-src 'none'" />
+    <meta name="color-scheme" content="light dark" />
+    <title data-l10n-id="neterror-dns-not-found-title">Server Not Found</title>
+    <link rel="stylesheet" href="chrome://global/skin/aboutNetError.css" type="text/css" media="all" />
+    <link rel="icon" id="favicon" href="chrome://global/skin/icons/info.svg" />
+  </head>
 
-		body {
-			--google-gray-700: rgb(95, 99, 104);
-			background: #fff;
-			color: var(--google-gray-700);
-			word-wrap: break-word;
-			font-family: 'Segoe UI', Tahoma, sans-serif;
-			font-size: 75%;
-		}
+  <body class="neterror">
+    <!-- PAGE CONTAINER (for styling purposes only) -->
+    <div class="container">
+      <div id="text-container">
+        <!-- Error Title -->
+        <div class="title">
+          <h1 class="title-text" data-l10n-id="dnsNotFound-title">You're about to get RickRolled!</h1>
+        </div>
 
-		.nav-wrapper .secondary-button {
-			background: #fff;
-			border: 1px solid rgb(154, 160, 166);
-			color: var(--google-gray-700);
-			float: none;
-			margin: 0;
-			padding: 8px 16px;
-		}
+        <!-- Short Description -->
+        <p id="errorShortDesc">You were trying to access a RickRoll, we saved you.</p>
+        <p id="errorShortDesc2"></p>
 
-		html {
-			-webkit-text-size-adjust: 100%;
-			font-size: 125%;
-		}
+        <div id="errorWhatToDo" hidden="">
+          <p id="errorWhatToDoTitle" data-l10n-id="certerror-what-can-you-do-about-it-title">What can you do about it?</p>
+          <p id="badStsCertExplanation" hidden=""></p>
+          <p id="errorWhatToDoText"></p>
+        </div>
 
-		button {
-			border: 0;
-			border-radius: 4px;
-			box-sizing: border-box;
-			color: #fff;
-			cursor: pointer;
-			float: right;
-			font-size: .875em;
-			margin: 0;
-			padding: 8px 16px;
-			transition: box-shadow 150ms cubic-bezier(0.4, 0, 0.2, 1);
-			user-select: none;
-			font-family: 'Segoe UI', Tahoma, sans-serif;
-		}
-
-		.ssl button {
-			background: rgb(26, 115, 232);
-		}
-
-		button:active {
-			background: rgb(25, 103, 210);
-			outline: 0;
-		}
-
-		.error-code {
-			color: var(--google-gray-700);
-			font-size: .86667em;
-			text-transform: uppercase;
-			margin-top: 12px;
-		}
-
-		h1 {
-			color: rgb(32, 33, 36);
-			font-size: 1.6em;
-			font-weight: normal;
-			line-height: 1.25em;
-			margin-bottom: 16px;
-		}
-
-		.interstitial-wrapper {
-			box-sizing: border-box;
-			font-size: 1em;
-			line-height: 1.6em;
-			margin: 14vh auto 0;
-			max-width: 600px;
-			width: 100%;
-		}
-
-		#main-message>p {
-			display: inline;
-		}
-
-		.nav-wrapper {
-			margin-top: 40px;
-		}
-
-		.icon {
-			height: 72px;
-			margin: 0 0 40px;
-			width: 72px;
-			background-image: url("warn.png");
-		}
-
-		@media (prefers-color-scheme: dark) {
-			body {
-				--google-gray-dark: rgb(155,160,165);
-				background: #202124;
-				color: var(--google-gray-dark);
-			}
-
-			.nav-wrapper .secondary-button {
-				background: #202124;
-				border: 1px solid rgb(154, 160, 166);
-				color: rgb(138, 180, 248);
-			}
-
-			.ssl button {
-				background: rgb(129, 162, 208);
-				color: #202124;
-			}
-
-			.error-code {
-				color: var(--google-gray-dark);
-			}
-
-			h1 {
-				color: var(--google-gray-dark);
-			}
-		}
-
-	</style>
-	<script src="warn.js" defer></script>
-</head>
-<body class="ssl">
-	<div class="interstitial-wrapper">
-		<div>
-			<div class="icon"></div>
-			<div>
-				<h1>You're about to get Rickrolled!</h1>
-				<p>You clicked on a link that leads to a <strong>RickRoll</strong>!<br>
-				<div class="error-code">antirick::BLOCKED_RICKROLL</div>
-			</div>
-		</div>
-		<div class="nav-wrapper">
-			<button id="back-btn">Back to safety</button>
-			<button id="continue-btn" class="secondary-button">Continue</button>
-		</div>
-	</div>
-</body>
+        <!-- Long Description -->
+        <div id="errorLongDesc"><span data-l10n-id="neterror-dns-not-found-hint-header"><strong>If you entered the right address, you can:</strong></span><ul><li data-l10n-id="neterror-dns-not-found-hint-try-again">Do nothing, we saved you. Just thank us!</li></ul></div>
+          </div>
+      <div id="netErrorButtonContainer" class="button-container"><button class="primary try-again" data-l10n-id="neterror-try-again-button">Modified by Artivain</button>
+      </div>
+      </div>
+    </div>
+  </body>
+  <script src="chrome://global/content/neterror/aboutNetErrorCodes.js"></script>
+  <script type="module" src="chrome://global/content/aboutNetError.mjs"></script>
 </html>
