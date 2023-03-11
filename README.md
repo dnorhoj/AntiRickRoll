@@ -36,9 +36,21 @@ To report a bug, please open an issue or report it in our discord server.
 
 ## Development
 
-To run the extension locally, clone the repo and run `yarn install` and `yarn build`.
+### Build instructions
 
-Then you can load the unpacked extension that will be created in the `dist` folder.
+To build the extension with "laravel mix", you need these dependencies:
+
+- Node.js (I am using v19.6.0)
+- Yarn
+
+Any OS should work, but I am using Arch Linux.
+
+Then, run these commands:
+
+```bash
+yarn install # Install dependencies
+yarn run prod # Build the extension in production mode
+```
 
 ## Contributing
 

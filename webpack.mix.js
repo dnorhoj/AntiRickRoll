@@ -35,5 +35,3 @@ if (manifestVersion === 'v3') {
 } else {
     mix.copy('src/manifest-v2.json', 'dist/manifest.json');
 }
-
-mix.svelte();
