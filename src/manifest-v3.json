@@ -1,9 +1,9 @@
 {
 	"$schema": "https://json.schemastore.org/chrome-manifest",
 	"manifest_version": 3,
-	"version": "1.5",
 	"name": "AntiRickRoll",
 	"description": "Never gonna rickroll you, never gonna let you get rickrolled.",
+	"version": "1.5",
 	"content_scripts": [
 		{
 			"js": ["background/content.js"],

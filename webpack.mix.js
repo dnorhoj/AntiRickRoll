@@ -1,6 +1,15 @@
 const mix = require('laravel-mix');
-const { CleanPlugin } = require('webpack');
 require('laravel-mix-svelte');
+require('laravel-mix-clean');
+
+const manifestVersion = process.env.MANIFEST || 'v3';
+
+// Clean dist folder
+if (mix.inProduction()) {
+    mix.clean({
+        cleanOnceBeforeBuildPatterns: ['dist'],
+    });
+}
 
 // Enable svelte support
 mix.svelte({
@@ -18,7 +27,13 @@ mix.js('src/background/content.js', 'dist/background/content.js')
     .copy('src/warn/critical.png', 'dist/warn/critical.png')
     .js('src/popup/index.js', 'dist/popup/index.js')
     .copy('src/popup/index.html', 'dist/popup/index.html')
-    .copy('src/manifest.json', 'dist/manifest.json')
     .copyDirectory('src/icons', 'dist/icons');
+
+// Copy manifest
+if (manifestVersion === 'v3') {
+    mix.copy('src/manifest-v3.json', 'dist/manifest.json');
+} else {
+    mix.copy('src/manifest-v2.json', 'dist/manifest.json');
+}
 
 mix.svelte();

@@ -1,32 +1,7 @@
 (() => {
     // Define blocked ids. Hardcoded for now, working on changing that.
-    const blockedIds = [
-        'dQw4w9WgXcQ',
-        '-51AfyMqnpI',
-        'oHg5SJYRHA0',
-        'cvh0nX08nRw',
-        'V-_O7nl0Ii0',
-        '2ocykBzWDiM',
-        'j5a0jTc9S10',
-        'HPk-VhRjNI8',
-        'IO9XlQrEt2Y',
-        'QB7ACr7pUuE',
-        'iik25wqIuFo',
-        'zL19uMsnpSU',
-        'rTgj1HxmUbg',
-        'xvFZjo5PgG0',
-        '8ybW48rKBME',
-        'ub82Xb1C8os',
-        'j8PxqgliIno',
-        'j7gKwxRe7MQ',
-        'th0pH9srXRY',
-        'gPkZS92WCIo',
-        'ENYalQvZG4Q',
-        'QhuZIEkKkXA',
-        'SjTOn5scRmY',
-        'XfIIQYnBHrQ',
-        'bkOVXdvijmQ'
-    ];
+    const blockedIds = require('./blockedIds.js');
+    console.log(blockedIds);
 
     // We grab the storage every time in case an id gets added while we're browsing (futureproofing)
     const checkLink = () => chrome.storage.local.get(['bypassed', 'totalRickRolls', 'extDisabled'], res => {
