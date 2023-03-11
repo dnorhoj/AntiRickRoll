@@ -3,7 +3,7 @@
 	"manifest_version": 3,
 	"name": "AntiRickRoll",
 	"description": "Never gonna rickroll you, never gonna let you get rickrolled.",
-	"version": "1.5",
+	"version": "1.6",
 	"content_scripts": [
 		{
 			"js": ["background/content.js"],

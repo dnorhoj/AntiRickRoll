@@ -1,8 +1,6 @@
-(() => {
-    // Define blocked ids. Hardcoded for now, working on changing that.
-    const blockedIds = require('./blockedIds.js');
-    console.log(blockedIds);
+import blockedIds from './blockedIds.js';
 
+(() => {
     // We grab the storage every time in case an id gets added while we're browsing (futureproofing)
     const checkLink = () => chrome.storage.local.get(['bypassed', 'totalRickRolls', 'extDisabled'], res => {
         // Check if blocking is enabled and if url in blocked links
