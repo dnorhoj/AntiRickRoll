@@ -17,7 +17,7 @@
 <div class="max-w-fit">
     <Header />
 
-    <div class="h-96 overflow-x-scroll">
+    <div class="h-96 overflow-x-auto">
         {#if $page === 0}
             <div in:fade={fadeOptions}>
                 <Home />
