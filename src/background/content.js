@@ -10,7 +10,7 @@ import blockedIds from './blockedIds.js';
                 // Update total rickrolls blocked counter
                 chrome.storage.local.set({ totalRickRolls: (res.totalRickRolls ?? 0) + 1 })
 
-                location = chrome.runtime.getURL('warn/warn.html') + '?' + location.href;
+                location.replace(chrome.runtime.getURL('warn/warn.html') + '?' + location.href);
             } else {
                 chrome.storage.local.set({ bypassed: false })
             }

@@ -9,7 +9,7 @@
 	});
 
 	document.getElementById('continue-btn').addEventListener('click', () => {
-		chrome.storage.local.set({ bypassed: true })
-		location.href = window.location.search.slice(1);
+		chrome.storage.local.set({ bypassed: true });
+		location.replace(window.location.search.slice(1));
 	});
 })();
