@@ -1,0 +1,37 @@
+name: Compile Extension
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v3
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+          cache: yarn
+          node-version: 16
+    - name: Check node modules cache
+      uses: actions/cache@v3
+      id: yarn-cache
+      with:
+        path: ./node_modules
+        key: ${{ runner.os }}-yarn-${{ hashFiles('yarn.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-yarn-
+    - name: Install node modules
+      if: steps.yarn-cache.outputs.cache-hit != 'true'
+      run: yarn --pure-lockfile
+    - name: Compile
+      run: yarn run prod
+    - name: Upload
+      uses: actions/upload-artifact@v3.1.2
+      with:
+        name: Extension
+        path: dist/*
+        retention-days: 7
